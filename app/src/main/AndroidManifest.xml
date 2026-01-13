@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.manish.sharpsprint">
+
+    <application
+        android:allowBackup="true"
+        android:label="SharpSprint"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SharpSprint">
+
+        <!-- Launcher -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Home -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+
+        <!-- Game Modes -->
+        <activity
+            android:name=".DailySprintActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".FlashChallengeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".WeeklyArenaActivity"
+            android:exported="false" />
+
+        <!-- Wallet -->
+        <activity
+            android:name=".WalletActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
